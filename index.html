@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Role Playing Game!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	
+
+
+</head>
+<body background="assets/images/dungeon_background.jpg">
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+<!-- creature images -->
+
+  <!-- <div class="row">
+    <div class="col-md-12 possibleOpponentArea">
+      <img id="warrior" src="assets/images/kobold_warrior.jpeg" id="warrior" class="creatures col-md-3"/>
+      <img id="warriorTwo" src="assets/images/kobold_warrior.jpeg" id="warriorTwo" class="creatures col-md-3"/>
+      <img id="archer" src="assets/images/kobold_archer.jpeg" id="archer" class=" creatures col-md-3"/>
+      <img id="sorcerer" src="assets/images/kobold_sorcerer.jpeg" id="sorcerer"  class="creatures col-md-3"/>
+    </div>
+  </div> -->
+
+      
+    <div class="row ">
+    <div class="col-md-12 ">
+    	<input type="image" id="warrior" src="assets/images/kobold_warrior.jpeg" class="creatures col-md-3"/>
+      <input type="image" id="warriorTwo" src="assets/images/kobold_warrior.jpeg" class="creatures col-md-3"/>
+      <input type="image" id="archer" src="assets/images/kobold_archer.jpeg"
+       class=" creatures col-md-3"/>
+      <input type="image" id="sorcerer" src="assets/images/kobold_sorcerer.jpeg"  class="creatures col-md-3"/>
+    </div>
+  </div>
+
+
+
+	<!-- text container -->
+<div class="row">
+	<div class=text-area>
+  		<h1>You have come upon a group of deadly Kobolds! 
+			<br><br>
+  			Select your enemy!
+  		</h1>
+	</div>
+
+<div class="row">
+	<div class ="selectedEnemyContainer col-md-6"></div>
+	<div class="col-md-5" id= "enemyHealth"><p>Enemy Health</p></div>
+</div>
+
+
+ <br>
+ <div class ="row">
+  <div class ="pcContainer">  
+ 	<img class="pc" src=assets/images/pcmage.jpeg>
+  	  <button type="button" class="btn btn-default" id="diceRollButton">Attack!</button>
+  	   <div id= "rollMessage">
+    	
+  	   </div> 
+  </div>
+  </div>
+</body>
+</html>

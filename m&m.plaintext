@@ -1,0 +1,54 @@
+creating an RPG game based on DnD
+you will start with 1 PC and 4 Enemies
+
+When you challenge/begin combat with one of the enemies, 
+character starts at 10 hp
+
+Each enemy will have 4hp
+
+create counter for each creature including pc
+
+enemy attacks will be set based on a random number between 1 and 16(pc's armor class)
+
+pc attacks will be set based on a random number between 1 and 20(d20 stats) anything above 8 hits
+
+time could be used to dictate each round, after so many seconds, round is forfeit for pc and enemy creature attacks. 
+
+When one enemy is defeated, player selects next enemy, hit counter does not go up(could include a health potion to use once)
+
+if pc health goes to 0 or lower, game over
+if pc defeats all 4 enemies, pc wins
+
+
+
+
+_design_
+pc selects npc, 
+npc moves to another div
+pc cannot choose another npc while in combat
+div will display hp for pc
+div will display hp for npc
+ combat begins
+
+pc attacks npc (must "roll," using attack button, over 8) 
+if roll is over 8 deals 1 damage to selected npc 
+if roll is equal to 20 deals 2 damage to selected npc
+
+
+npc attacks pc after a 5 second timer and must "roll" 12
+	if npc rolls greater than or equal to 12, pc hit points go down by 2
+	if npc rolls 20 than pc hit points go down by 3
+	if pc hit points equal or fall below 0, game over
+
+once one npc has hit points equal to or below 0, next npc is selected by pc
+	enemy creature portait disappears, move on to next enemy
+	if all npc's are dead pc wins
+done
+
+
+is game over? No? Select next enemy
+is game over? yes? Did you win or did you lose? 
+
+
+
+
